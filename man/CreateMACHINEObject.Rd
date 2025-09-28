@@ -42,7 +42,7 @@ lambda is not provided, lambda will be estimated.}
 
 \item{R_eig}{An output of "eigen" function. A list with two components
 "values" and "vector". If in_sample_LD == TRUE, don't need to provide it.
-If provided, it will be used to create h2D2 object directly. Otherwise, 
+If provided, it will be used to create MACHINE object directly. Otherwise, 
 it will be computed.}
 
 \item{a}{Shape parameters for sigma^2. Either a positive real number or an
@@ -63,7 +63,7 @@ absolute correlation allowed in a credible set.}
 \item{tol}{Eigenvalues less than tol will be coerced to zeros.}
 }
 \value{
-An h2D2 object. See \code{\link{h2D2-class}}.
+An MACHINE object. See \code{\link{MACHINE-class}}.
 The input z-scores will be modified to z / sqrt(1 + z^2/N - 1/N).
 }
 \description{
