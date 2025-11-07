@@ -20,6 +20,8 @@ devtools::install_github("https://github.com/xiangli428/MACHINE")
 library(MACHINE)
 ```
 
+The installation takes about one minute on a "normal" desktop computer.
+
 ### 2. load test dataset
 ```
 data(MACHINE_test_data)
@@ -55,7 +57,7 @@ MACHINE = CreateMACHINEObject(Z,
 where `a` and `c` specify the hyper-parameters of the prior.
 By default, when both `in_sample = TRUE` and `in_sample = FALSE`, we 
 recommend setting `b = NULL` and `b` will be estimated by a pre-training 
-process before MCMC. 
+process before MCMC.
 
 ### 4. MCMC sampling
 
@@ -68,6 +70,8 @@ MACHINE = MACHINE_MCMC(MACHINE, mcmc_n = 5500, burn_in = 500, thin = 1,
 ```
 We introduce parallel tempering to improve mixing of MCMC. Set
 `n_chain = 1` can turn off parallel tempering.
+For the test data, the MCMC sampling takes several seconds on a "normal"
+desktop computer.
 
 ### 5. Results
 
@@ -81,3 +85,8 @@ MACHINE@CS
 ```
 
 ### 6. Citation
+
+Li, X., Xiong, Z., Sham, P. C., & Zhang, Y. D. (2025). 
+MACHINE: a robust and scalable multi-ancestry fine-mapping method using a 
+continuous global-local shrinkage prior. medRxiv, 2025-09.
+(https://www.medrxiv.org/content/10.1101/2025.09.28.25336857v2)
