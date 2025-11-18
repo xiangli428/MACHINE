@@ -89,4 +89,4 @@ MACHINE@CS
 Li, X., Xiong, Z., Sham, P. C., & Zhang, Y. D. (2025). 
 MACHINE: a robust and scalable multi-ancestry fine-mapping method using a 
 continuous global-local shrinkage prior. medRxiv, 2025-09.
-(https://www.medrxiv.org/content/10.1101/2025.09.28.25336857v2)
+(https://www.researchsquare.com/article/rs-7737326/v1)
